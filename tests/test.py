@@ -1,4 +1,4 @@
-from hello import add
+from src.hello import add
 
 
 def test_add():

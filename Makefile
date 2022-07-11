@@ -1,6 +1,7 @@
 install:
-	pip install --upgrade pip && \
-	pip install -r requirements.txt
+	pip install --upgrade pip
+	pip install poetry
+	poetry install
 
 quality:
 	black src
@@ -11,4 +12,6 @@ lint:
 	
 test:
 	pytest tests/test.py
+
+all: quality lint test
 
